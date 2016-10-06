@@ -4,25 +4,13 @@
 
 #include "Entity.h"
 
-enum Direction
-{ 
-	UP,
-	DOWN,
-	LEFT,
-	RIGHT
-};
-
 class Player : public Entity{
 public:
 	Player();
 	~Player();
 	
-	void Move();
+	void Initialise(point startPos);
 	void Move(Direction);
-
-	char GetRepresentation();
-	int GetX();
-	int GetY();
 private:
 	void PickUp();
 	

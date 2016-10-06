@@ -10,6 +10,29 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\CollisionManager.h" />
+    <ClInclude Include="inc\Entity.h" />
+    <ClInclude Include="inc\Ladder.h" />
+    <ClInclude Include="inc\Level.h" />
+    <ClInclude Include="inc\Object.h" />
+    <ClInclude Include="inc\Player.h" />
+    <ClInclude Include="inc\Wall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CollisionManager.cpp" />
+    <ClCompile Include="src\Entity.cpp" />
+    <ClCompile Include="src\Ladder.cpp" />
+    <ClCompile Include="src\Level.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\NYTimer.cpp" />
+    <ClCompile Include="src\Object.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Wall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\map.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9E5565AF-45E2-4CCE-85D6-B2880695DF23}</ProjectGuid>
     <RootNamespace>AsciiLabyrinth</RootNamespace>
@@ -44,6 +67,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>inc/</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -63,17 +87,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Entity.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Object.cpp" />
-    <ClCompile Include="Player.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Entity.h" />
-    <ClInclude Include="Object.h" />
-    <ClInclude Include="Player.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

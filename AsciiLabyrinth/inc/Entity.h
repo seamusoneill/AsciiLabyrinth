@@ -1,6 +1,14 @@
 #pragma once
 #include "Object.h"
 
+enum Direction
+{
+	UP,
+	DOWN,
+	LEFT,
+	RIGHT
+};
+
 class Entity :
 	public Object
 {
@@ -8,7 +16,7 @@ class Entity :
 		Entity();
 		~Entity();
 
-		virtual void Move() = 0;
+		virtual void Move(Direction) = 0;
 		void Death();
 		void Attack();
 
