@@ -12,8 +12,8 @@ typedef struct
 	int reps;
 } generation_params;
 
-const int SCREEN_WIDTH = 64;
-const int SCREEN_HEIGHT = 32;
+const int SCREEN_WIDTH = 30;
+const int SCREEN_HEIGHT = 30;
 
 class Level
 {

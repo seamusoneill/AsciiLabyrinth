@@ -16,7 +16,7 @@ class Entity :
 		Entity();
 		~Entity();
 
-		virtual void Move(Direction) = 0;
+		virtual void Move(Direction movingTo) = 0;
 		void Death();
 		void Attack();
 
